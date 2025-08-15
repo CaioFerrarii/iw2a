@@ -5,137 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link href="bootstrap.min.css" rel="stylesheet" />
-    <style>
-        .bg-personalizado{
-            background-color: brown;
-        }
-        .dropdown-item:hover, .dropdown-item.active {
-            background-color: black;
-            color: white;
-        }
-        .navbar-toggler-icon {
-            background-color: white; /* Mudando a cor de fundo para branco */
-        }
-        /* div{
-          text-align: center;
-          border: 1px solid;
-          font-size: 30pt;
-        } */
-    </style>
+ 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand text" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Uma opção do menu</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu bg-dark">
-                  <li><a class="dropdown-item text-white" href="#">Action</a></li>
-                  <li><a class="dropdown-item text-white" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-success" type="submit">
-                    Pesquisar
-                </button>
-            </form>
-          </div>
-        </div>
-      </nav>
+<!-- NavBar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Caio Ferrari | Áudio Visual</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Lobby</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Serviços
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Vídeo</a></li>
+              <li><a class="dropdown-item" href="#">Fotofragia</a></li>
+              <li><a class="dropdown-item" href="#">Filme</a></li>
+              <li><a class="dropdown-item" href="#">Artes</a></li>
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-       
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-6"></div>
-    <div class="col-6"></div>
-  </div>
-  
-  <div class="row">
-    <div class="col-4"> jahfu io poih oipu hiouh oiu iouh oiuh iou yh uhi uhiou hiuh ou h</div>
-    <div class="col-4">
-      <br>
-      <div class="card">
-        <div class="card-header">
-          Bem vindo ao site
-        </div>
-        <div class="card-body">
-          <form>
-            <div class="form-group">
-                <label for="email">Endereço de e-mail</label>
-                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
-            </div>
-            <div class="form-group">
-                <label for="senha">Senha</label>
-                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="lembrarSenha">
-                <label class="form-check-label" for="lembrarSenha">Lembrar-me</label>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block mt-3">Entrar</button>
+
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Criação de sites | Beta</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="O que deseja procurar ?" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
-        </div>
       </div>
     </div>
-    <div class="col-4"></div>
+  </nav>
+<div class="container">
+    <!-- Imagem -->
+  <div class="row mt-2">
+    <div class="col-12 d-flex justify-content-center">
+      <img src="https://wallpapers.com/images/featured/fotos-do-1600x900-4ss8ddaljyq62f9j.jpg"  width="100000" height="400">
+    </div>
+    <br>
   </div>
-  
+
+  <!-- Menu-->
+   <div class="row mt-2">
+    <div class="col-4">
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Débora Gavião</div>
+            Comentário
+          </div>
+          <span class="badge text-bg-primary rounded-pill">3</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Edilson Palhares</div>
+            Comentário
+          </div>
+          <span class="badge text-bg-primary rounded-pill">6</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Luiz Paulo</div>
+            Comentário
+          </div>
+          <span class="badge text-bg-primary rounded-pill">1</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Kaio Eduardo</div>
+            Comentário
+          </div>
+          <span class="badge text-bg-primary rounded-pill">4</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Paulo Miranda</div>
+            Comentário
+          </div>
+          <span class="badge text-bg-primary rounded-pill">6</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Silmara Regina</div>
+            Comentário
+          </div>
+          <span class="badge text-bg-primary rounded-pill">3</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">André Esteves</div>
+            Comentário
+          </div>
+          <span class="badge text-bg-primary rounded-pill">7</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Lucas Pulini</div>
+            Comentário
+          </div>
+          <span class="badge text-bg-primary rounded-pill">8</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Eduarda Girote</div>
+            Comentário
+            </div>
+          <span class="badge text-bg-primary rounded-pill">5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Thauany Delarmerlindo</div>
+            Comentário
+          </div>
+          <span class="badge text-bg-primary rounded-pill">1</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold"> Bárbara Fonseca</div>
+            Comentário
+          </div>
+          <span class="badge text-bg-primary rounded-pill">22</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Beatriz Correa</div>
+            Comentário
+          </div>
+          <span class="badge text-bg-primary rounded-pill">9</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Lívia Sabiá</div>
+            Comentário
+          </div>
+          <span class="badge text-bg-primary rounded-pill">10</span>
+        </li>
+
+      </ol> 
+    </div>
+
+
+  <!-- Conteúdo-->
+<div class="col-8 mt-2">
+  <h1>Introdução ao Audiovisual</h1>
+
+  <section>
+    <h2>1. O Que é Audiovisual?</h2>
+    <p>
+      O termo audiovisual se refere à combinação de elementos visuais e sonoros para transmitir mensagens, contar histórias ou proporcionar experiências ao público. Ele engloba uma vasta gama de mídias e formatos, incluindo filmes, vídeos, animações, transmissões televisivas, apresentações multimídia e muito mais. O audiovisual é uma das formas mais impactantes de comunicação moderna, pois ativa simultaneamente dois dos sentidos humanos mais importantes: a visão e a audição. Essa combinação permite que as informações sejam absorvidas de maneira mais completa e envolvente, facilitando o entendimento e a conexão emocional com o conteúdo apresentado.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. A Importância do Audiovisual na Comunicação</h2>
+    <p>
+      A comunicação audiovisual desempenha um papel fundamental na sociedade contemporânea, 
+      influenciando desde a educação até o marketing e o entretenimento. 
+      Por meio do uso estratégico de imagens, sons, música e narrativa, o audiovisual consegue captar a atenção do público de maneira eficiente,
+      tornando mensagens complexas mais acessíveis e memoráveis. Em ambientes educacionais, por exemplo, 
+      vídeos e animações auxiliam na compreensão de conceitos abstratos, promovendo uma aprendizagem mais dinâmica e interativa. 
+      No campo da publicidade, o audiovisual permite que marcas criem conexões emocionais profundas com seus consumidores, 
+      utilizando histórias visuais para construir identidade e confiança. Além disso, plataformas digitais e redes sociais ampliaram 
+      exponencialmente o alcance do conteúdo audiovisual, consolidando-o como um dos formatos mais consumidos atualmente.
+    </p>
+  </section>
+
+  <section>
+    <h2>3. Elementos Essenciais do Audiovisual</h2>
+    <p>
+      Para que um produto audiovisual seja eficaz e impactante, é necessário considerar diversos 
+      elementos essenciais que compõem sua estrutura. Primeiramente, a imagem é o componente visual 
+      que pode variar desde cenas reais capturadas por câmeras até gráficos e animações digitais. 
+      A qualidade, enquadramento, iluminação e cor são fatores que influenciam diretamente a percepção do espectador.
+       Em segundo lugar, o áudio inclui não apenas a fala ou narração, mas também sons ambientes, efeitos sonoros 
+       e trilhas musicais, que enriquecem a experiência e ajudam a transmitir o clima e a emoção da narrativa. 
+       A edição é outro aspecto vital, pois organiza e sincroniza esses elementos para garantir fluidez, ritmo e coerência. 
+       Por fim, a história ou mensagem central deve ser clara e bem estruturada, garantindo que o público compreenda e se conecte com o 
+       conteúdo apresentado. A harmonização desses componentes resulta em uma produção audiovisual eficaz, capaz de informar, entreter e 
+       emocionar. Mais recentemente, por influência da língua francesa, audiovisual passou a caracterizar o conjunto de todas as tecnologias, 
+       formas de comunicação e produtos constituídos de sons e imagens com impressão de movimento. 
+       O Audio Visual ajuda as pessoas a compreenderem.
+    </p>
+  </section>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
+</div>
+</div>
 
       <br />
-      <div class="alert alert-success" role="alert">
-       Cadastrado com sucesso
-      </div>
-
-
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
-    
-    <button type="button" class="btn btn-link">Link</button>
-
-
-    <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
